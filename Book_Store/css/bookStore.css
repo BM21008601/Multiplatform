@@ -1,4 +1,16 @@
-.grid-container {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i&display=swap');
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #555;
+  background-color: aquamarine;
+	margin: 0;
+	padding: 0;
+}
+
+.content {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
@@ -6,9 +18,26 @@
     padding: 10px;
   }
   
-  .grid-container > div {
+  .content > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
   }
+
+section{
+  padding: 0 30px;
+}
+
+section.main{
+  margin-top: 20px;
+  bottom: 30px;
+  padding: 0;
+}
+
+section.main.content{
+  margin:15px;
+	background: no-repeat center top;
+	background-size: 75px 75px;
+	padding-top: 85px;
+}
