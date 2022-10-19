@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i&display=swap');
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #555;
+  background-color: aquamarine;
+	margin: 0;
+	padding: 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: #FF91A4;
+    padding: 10px;
+  }
+  
+  .content > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+/************** Section main ************/
+
+section{
+  padding: 0 30px;
+}
+
+section.main{
+  margin-top: 20px;
+  bottom: 30px;
+  padding: 0;
+}
+
+section.main.content{
+  margin:15px;
+	background: no-repeat center top;
+	background-size: 75px 75px;
+	padding-top: 85px;
+}
+
+/****** Section Article  *******/
+
+section.article{
+	background-color: coral;
+	padding-top:30px;
+	padding-bottom:30px;
+	color: #fff;
+}
+
+section.article article{
+	padding: 0 20px 0 515px;
+	background: url(../images/photo_lounge.jpg) no-repeat 0 5px;
+	min-height:230px;
+}
+
+/******************Section Location*****************/
+
+section.location{
+	background-color: #eee9d9;
+	position: relative;
+}
+
+section.location aside{
+	width:30%;
+	float:left;
+	margin-right:10px;
+}
+
+section.location aside .content{
+	padding: 30px 30px 20px 0;
+}
+
+section.location aside .content img{
+	display:block;
+	margin-bottom:15px;
+	width:70%;
+}
+
+section.location aside .content h4{
+
+	margin-bottom:0;
+}
+
+section.location aside .content p{
+
+	margin-bottom: 0.5em;
+
+}
+
+section.location aside .content a{
+	display: inline-block;
+	color: #cc6633;
+	font-weight:700;
+}
+
+section.location blockquote{
+	margin:0;
+	width:32%;
+	color:#444;
+	background-color:#fff;
+	position:absolute;
+	bottom:0;
+	right:4%;
+}
+
+section.location blockquote p{
+	margin: 30px 30px 20px 50px;
+}
+
+
+section.location blockquote p.quote{
+	font-style: italic;
+	font-size:1.2em;
+}
+
+
+section.location blockquote p.credit{
+	color:#777;
+	font-size:0.9em;
+	margin-top:0;
+	padding-left:20px;
+	line-height: 1.3em;
+	position: relative;
+}
+
+section.location blockquote::before{
+	content: '\201c';
+	color:#d2bd65;
+	position:absolute;
+	font-size:5em;
+	font-family:serif;
+	top:10px;
+	left:8px;
+}
+
+section.location blockquote p.quote::after{
+	content:'\201d';
+	font-family:serif;
+}
+
+section.location blockquote p.credit::after{
+	content:'\2014';
+	position:absolute;
+	top:-1px;
+	left:0;
+}
