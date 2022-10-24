@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i&display=swap');
+
+body {
+    background-color: #EDC9AF;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+  }
