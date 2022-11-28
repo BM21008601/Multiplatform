@@ -29,13 +29,11 @@
 <INPUT TYPE="submit" VALUE="Register">
 </FORM>
 
-<br>
-<br>
-
-<audio controls autoplay>
-    <source src="audio/loginFail.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
+<footer>
+    <script src="js/accessibility.js"></script>
+    <button onclick="lightMode()">Light Mode</button>
+    <button onclick="darkMode()">Dark Mode</button>
+</footer>
 
 </body>
 </html>

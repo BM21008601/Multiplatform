@@ -32,5 +32,11 @@
 <br>
 <br>
 
+<footer>
+    <script src="js/accessibility.js"></script>
+    <button onclick="lightMode()">Light Mode</button>
+    <button onclick="darkMode()">Dark Mode</button>
+</footer>
+
 </body>
 </html>

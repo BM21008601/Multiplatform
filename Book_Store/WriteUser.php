@@ -51,6 +51,12 @@
 <INPUT TYPE="submit" VALUE="Back to Login">
 </FORM>
 
+<footer>
+  <script src="js/accessibility.js"></script>
+  <button onclick="lightMode()">Light Mode</button>
+  <button onclick="darkMode()">Dark Mode</button>
+</footer>
+
 </body>
 </html>
 

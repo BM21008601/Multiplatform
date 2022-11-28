@@ -6,7 +6,7 @@
 <body>
 <h2>Register User details</h2>
 
-<form method="POST" action="WriteUser.php">
+<form method="POST" onsubmit = "return validate()" action="WriteUser.php">
 
 <table>
  <tr>
@@ -31,14 +31,18 @@
  </tr>
  <tr>
   <td>Email Address:</td>
-  <td><input type="text" name="Email" size="30" > </td>
+  <td><input type="text" id="Email" name="Email" size="30" > </td>
+  <td><p id="emailValid"></p><td>
  </tr>
  <tr>
   <td>Password:</td>
-  <td><input type="Password" name="Password" size="10" > </td>
+  <td><input type="Password" id="Password" name="Password" size="10" > </td>
+  <td><p id="passwordValid"></p><td>
  </tr>
  <tr>
   
+<script src="js/validate.js"></script>
+
  <td colspan="2"><input type="submit" value="Add User"/></td>
  </tr>
 <tr>
@@ -46,6 +50,12 @@
  </tr>
 </table>
 </form>
+
+<footer>
+    <script src="js/accessibility.js"></script>
+    <button onclick="lightMode()">Light Mode</button>
+    <button onclick="darkMode()">Dark Mode</button>
+</footer>
 
 </body>
 </html>
