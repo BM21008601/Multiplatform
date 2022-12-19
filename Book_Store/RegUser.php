@@ -6,7 +6,7 @@
 <body>
 <h2>Register User details</h2>
 
-<form method="POST" onsubmit = "return validate()" action="WriteUser.php">
+<form ng-app="myApp" ng-controller="myCtrl" method="post" onsubmit = "return validate()" action="WriteUser.php">
 
 <table>
  <tr>
@@ -30,6 +30,16 @@
   <td><input type="text" name="Postcode" size="10" > </td>
  </tr>
  <tr>
+  <td>Nationality:</td>
+  <td><select ng-model="clubs" ng-options="country for (country, clubs) in countries">
+	</select> </td>
+ </tr>
+ <tr>
+  <td>Club:</td>
+  <td><select name="clubSelection" ng-model="club" ng-disabled = "!clubs" ng-options="club.value for club in clubs track by club.value">
+	</select>
+ </tr>
+ <tr>
   <td>Email Address:</td>
   <td><input type="text" id="Email" name="Email" size="30" > </td>
   <td><p id="emailValid"></p><td>
@@ -42,6 +52,24 @@
  <tr>
   
 <script src="js/validate.js"></script>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+
+	$scope.countries = {
+
+			'Scottish': [{value:'Celtic'},{value:'Rangers'},{value:'ICTFC'},{value:'Ross County'}],
+			'Irish': [{value:'Shamrock Rovers'},{value:'Bray Wanderers'},{value:'Cork City'},{value:'Bohemians'}],
+			'Welsh': [{value:'Penybont'},{value:'Goytre United'},{value:'Afan Lido'},{value:'Monmouth Town'}],
+			'English': [{value:'Man City'},{value:'Chelsea'},{value:'Man Utd'},{value:'Liverpool'}]
+
+		}
+
+	}
+ 
+);
+</script>
 
  <td colspan="2"><input type="submit" value="Add User"/></td>
  </tr>

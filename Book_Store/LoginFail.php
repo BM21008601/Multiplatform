@@ -29,6 +29,11 @@
 <INPUT TYPE="submit" VALUE="Register">
 </FORM>
 
+<div id="stress">
+<script src="js/stress.js"></script>
+<button ontouchend="touchStart()">What's this?</button>
+</div> 
+
 <footer>
     <script src="js/accessibility.js"></script>
     <button onclick="lightMode()">Light Mode</button>
